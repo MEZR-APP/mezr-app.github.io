@@ -756,6 +756,42 @@ Data starts flowing immediately for real-time, and full reports build up over 24
 
 Index
 Code · HTML 
+1772069015109_image.png
+why do I get this message and I ended up creating a new tag G-XL9J7GMBTJ
+
+7:24 PM
+
+Identified outdated tracking code and resolved configuration mismatch
+Identified outdated tracking code and resolved configuration mismatch
+
+The warning is showing because the code on your live site has the old ID (G-VHRZ9BH6SY). Let me update it with your new one.
+
+
+Identified need to revise script source reference
+Identified need to revise script source reference
+
+
+
+Both references are updated. Here's the new file:
+
+
+Determined user requires live site update implementation
+Determined user requires live site update implementation
+
+
+Same process to update the live site:
+
+Go to github.com/MEZR-APP/mezr-app.github.io
+Click index.html → pencil icon
+Ctrl+A → Delete → paste new code
+Commit message: Update Analytics ID
+Click "Commit changes"
+After it's live, go to analytics.google.com → Reports → Realtime while visiting mezr.org in another tab. Once you see yourself as 1 active user, the warning will clear within 48 hours.
+
+Also, go back to Analytics Admin and delete the old property with ID G-VHRZ9BH6SY so you don't have duplicates sitting around.
+
+Index
+Code · HTML 
 
 
 
@@ -780,12 +816,12 @@ Copy
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mezr-app.github.io">
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHRZ9BH6SY"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL9J7GMBTJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-VHRZ9BH6SY');
+    gtag('config', 'G-XL9J7GMBTJ');
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
